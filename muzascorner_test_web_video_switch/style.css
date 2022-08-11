@@ -1,0 +1,26 @@
+body {
+    background-image: url("/src/images/home.png");
+}
+
+#vid-container {
+    position: fixed;
+    /* or absolute */
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color: aquamarine;
+    height: 70%;
+    width: 70%;
+}
+
+video,
+img,
+image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 70%;
+}
