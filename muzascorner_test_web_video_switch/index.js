@@ -148,12 +148,13 @@ function transition(current_scene, target_scene) {
     video.muted = true;
     video.style.height = "100%";
     video.style.width = "100%";
-    video.style.objectFit = "cover";
-    video.style.objectPosition = "center center";
+    //video.style.objectPosition = "center center";
     video.style.top = "0";
     video.style.left = "0";
-    video.style.right = "0";
     video.style.bottom = "0";
+    video.style.right = "0";
+
+
 
     container.appendChild(video);
 }

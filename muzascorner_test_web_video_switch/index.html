@@ -24,15 +24,31 @@
         <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
                 <div id="vid-container">
-
-                    <video autoplay muted id="myVideo">
+                    <video muted id="myVideo" style="
+                    background-size: cover;
+                    background-position: center;
+                    object-position: center;
+                    position: absolute;
+                    object-fit: cover;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: 0%;
+                    height: 100%;
+                    z-index: -442;
+                    ">
                         <source src="src/transitions/intro.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
+
                     <!-- Image try-->
-                    <image id="myImage">
+                    <!-- 
+                        <image id="myImage">
                         <source src="src/images/home.png">
                     </image>
+                    -->
+
                 </div>
                 <button onclick="home_button_set_background()" id="home_button"> home </button>
                 <button onclick="contact_buttonn_set_background()" id="contact_button"> contact </button>
