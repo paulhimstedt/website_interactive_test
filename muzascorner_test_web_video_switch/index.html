@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="acid">
 
 <head>
+    <!-- Tailwind library-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STU_GANG</title>
+    <title>MUCO</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -14,19 +19,33 @@
 </head>
 
 <body onload="setupVideo()">
+    <div class="hero min-h-screen">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+                <div id="vid-container">
 
-    <div id="vid-container">
-
-        <video autoplay muted id="myVideo">
-        <source src="/src/transitions/intro.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-        </video>
+                    <video autoplay muted id="myVideo">
+                        <source src="src/transitions/intro.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <!-- Image try-->
+                    <image id="myImage">
+                        <source src="src/images/home.png">
+                    </image>
+                </div>
+                <button onclick="home_button_set_background()" id="home_button"> home </button>
+                <button onclick="contact_buttonn_set_background()" id="contact_button"> contact </button>
+                <button onclick="disco_button_set_background()" id="disco_button"> discografie </button>
+                <button onclick="about_buttonn_set_background()" id="about_button"> about </button>
+                <h1 class="mb-5 text-5xl font-bold">MUZASCORNER</h1>
+                <button class="btn btn-primary">SLIDE IN</button>
+            </div>
+        </div>
     </div>
 
-    <button onclick="home_button_set_background()" id="home_button"> home </button>
-    <button onclick="contact_buttonn_set_background()" id="contact_button"> contact </button>
-    <button onclick="discografie_button_set_background()" id="discografie_button"> discografie </button>
-    <button onclick="about_buttonn_set_background()" id="about_button"> about </button>
+
+
 </body>
 
 </html>

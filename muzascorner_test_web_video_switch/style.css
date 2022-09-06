@@ -1,20 +1,49 @@
 body {
-    background-image: url("/src/images/home.png");
+    background-color: blueviolet;
 }
 
 #vid-container {
-    position: fixed;
-    /* or absolute */
+    background-size: cover;
+    background-image: url('src/images/home.png');
+    /*background-position: center;*/
+    /*
+    object-fit: cover;
+    background-color: aqua;
+    position: absolute;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
-    background-color: aquamarine;
     height: 70%;
     width: 70%;
+*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0%;
+    z-index: -442;
 }
 
-video,
+#myVideo {
+    overflow: hidden;
+}
+
+#vid-container image {
+    z-index: -445;
+}
+
+img,
+video {
+    width: auto;
+    /* or any custom size */
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/*video,
 img,
 image {
     position: fixed;
@@ -23,4 +52,4 @@ image {
     transform: translate(-50%, -50%);
     height: 70%;
     width: 70%;
-}
+}*/
