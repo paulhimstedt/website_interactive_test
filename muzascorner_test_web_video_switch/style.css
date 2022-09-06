@@ -3,19 +3,7 @@ body {
 }
 
 #vid-container {
-    /*background-size: cover;*/
     background-image: url('src/images/home.png');
-    /*background-position: center;*/
-    /*
-    object-fit: cover;
-    background-color: aqua;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 70%;
-    width: 70%;
-*/
     background-size: cover;
     background-position: center;
     object-position: center;
@@ -29,40 +17,29 @@ body {
 }
 
 video {
-    /*
-     width: 100%;
-    height: 100%;
-    object-position: center center;
-    */
-    /**/
     object-fit: cover;
 }
 
-#vid-container img,
-#vid-container image {
-    position: relative;
-}
-
-
-/* 
-img,
-image {
-    object-fit: cover;
-    object-position: center center;
+#btn_home {
     position: absolute;
-    left: -100%;
+    left: 0;
+    top: 0;
 }
 
-*/
+#btn_contact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
+#btn_disco {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
-/*video,
-img,
-image {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 70%;
-    width: 70%;
-}*/
+#btn_about {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
