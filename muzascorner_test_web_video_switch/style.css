@@ -1,45 +1,64 @@
-body {
-    background-color: blueviolet;
-}
-
-#vid-container {
-    background-image: url('src/images/home.png');
-    background-size: cover;
-    background-position: center;
-    object-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0%;
-    z-index: -442;
-}
-
-video {
-    object-fit: cover;
-}
-
-#btn_home {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-#btn_contact {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-#btn_disco {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#btn_about {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+            body {}
+            
+            #topnav_container {}
+            
+            #darkmode_bg {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(192, 192, 192, 0.3);
+                z-index: 2;
+            }
+            
+            #header_text {
+                margin-top: 20px;
+            }
+            
+            #vid-container {
+                background-image: url('src/images/home.png');
+                background-size: cover;
+                background-position: center;
+                object-position: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 0%;
+                z-index: -442;
+            }
+            
+            video {
+                object-fit: cover;
+            }
+            
+            #btn_home {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            
+            #btn_contact {
+                position: absolute;
+                left: 20%;
+                top: 0;
+            }
+            
+            #btn_disco {
+                position: absolute;
+                top: 0;
+                right: 20%;
+            }
+            
+            #btn_about {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            
+            #home_content_container {
+                position: absolute;
+                left: 20%;
+                top: 18%;
+                z-index: 3;
+            }
