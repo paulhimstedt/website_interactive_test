@@ -1,28 +1,42 @@
+var sql = require("./content_manager");
+
+sql.a();
 var home_button = document.getElementById("home_button");
 var contact_button = document.getElementById("contact_button");
 var disco_button = document.getElementById("disco_button");
 var about_button = document.getElementById("about_button");
 var vid_conatiner = document.getElementById("vid-container");
-var active_scene = "home"
+var active_scene = "home";
+var path = window.location.pathname;
+var page = path.split("/").pop();
+
+pagename = page.split(".")[0]
+console.log(path)
+console.log(page)
+console.log(pagename);
+
+
+//console.log(active_scene)
 
 function home_button_set_background() {
-    transition(active_scene, "home")
-    active_scene = "home"
+    transition(active_scene, "home");
+    active_scene = "home";
+    // sql.a.return
 }
 
 function contact_buttonn_set_background() {
-    transition(active_scene, "contact")
-    active_scene = "contact"
+    transition(active_scene, "contact");
+    active_scene = "contact";
 }
 
 function disco_button_set_background() {
-    transition(active_scene, "disco")
-    active_scene = "disco"
+    transition(active_scene, "disco");
+    active_scene = "disco";
 }
 
 function about_buttonn_set_background() {
-    transition(active_scene, "about")
-    active_scene = "about"
+    transition(active_scene, "about");
+    active_scene = "about";
 }
 
 function setupVideo() {
