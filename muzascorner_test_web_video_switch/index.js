@@ -1,6 +1,6 @@
-var sql = require("./content_manager");
+//var sql = require("./content_manager");
 
-sql.a();
+//sql.a();
 var home_button = document.getElementById("home_button");
 var contact_button = document.getElementById("contact_button");
 var disco_button = document.getElementById("disco_button");
@@ -21,22 +21,26 @@ console.log(pagename);
 function home_button_set_background() {
     transition(active_scene, "home");
     active_scene = "home";
+    return_content("home");
     // sql.a.return
 }
 
 function contact_buttonn_set_background() {
     transition(active_scene, "contact");
     active_scene = "contact";
+    return_content("contact");
 }
 
 function disco_button_set_background() {
     transition(active_scene, "disco");
     active_scene = "disco";
+    return_content("disco");
 }
 
 function about_buttonn_set_background() {
     transition(active_scene, "about");
     active_scene = "about";
+    return_content("about");
 }
 
 function setupVideo() {
