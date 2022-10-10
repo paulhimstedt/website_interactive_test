@@ -10,6 +10,7 @@ var active_scene = "home";
 var path = window.location.pathname;
 var page = path.split("/").pop();
 
+
 pagename = page.split(".")[0]
 console.log(path)
 console.log(page)
@@ -22,6 +23,7 @@ function home_button_set_background() {
     transition(active_scene, "home");
     active_scene = "home";
     return_content("home");
+
     // sql.a.return
 }
 
@@ -29,18 +31,22 @@ function contact_buttonn_set_background() {
     transition(active_scene, "contact");
     active_scene = "contact";
     return_content("contact");
+
 }
 
 function disco_button_set_background() {
     transition(active_scene, "disco");
     active_scene = "disco";
     return_content("disco");
+
 }
 
 function about_buttonn_set_background() {
     transition(active_scene, "about");
     active_scene = "about";
     return_content("about");
+
+
 }
 
 function setupVideo() {
@@ -60,6 +66,12 @@ function transition(current_scene, target_scene) {
     console.log(current_scene, " & ", target_scene)
     setupVideo()
     var video = document.createElement('video');
+
+    var bottom_pagination_content = document.getElementById("bottom_pagination_text");
+    bottom_pagination_content.innerHTML = "home"
+    console.log(bottom_pagination_content);
+    bottom_pagination_content.innerHTML = target_scene;
+
     switch (current_scene) {
         case "home":
             switch (target_scene) {
@@ -76,6 +88,7 @@ function transition(current_scene, target_scene) {
                     video.src = 'src/transitions/home_disco.mp4';
                     break;
             }
+
             break;
         case "contact":
             switch (target_scene) {

@@ -1,29 +1,35 @@
-function clear_inject_container() {
-    container = document.getElementById("inject_container");
-    container.innerHTML = '';
-}
+var current = "home";
 
 function return_content(mode) {
+
     switch (mode) {
 
         case "home":
-            var brute_home_content = document.createElement("div");;
-            brute_home_content.innerHTML = '<div class="card w-96 bg-base-100 shadow-xl image-full" id="home_content_container"><figure><img src="src/images/origami_small.PNG" alt="Origami" /></figure><div class="card-body"><h2 class="card-title">Origami Freestyle out now!!</h2><p>Bro den willst du echt nicht verpassen!</p><div class="card-actions justify-end"><button class="btn btn-primary">Hör rein</button></div></div></div>';
-
-            clear_inject_container();
-            document.getElementById("inject_container").appendChild(brute_home_content);
+            console.log("home")
+            document.getElementById(current + "_container").classList.add("passive");
+            current = "home";
+            document.getElementById("home_container").classList.remove("passive");
             break;
 
         case "disco":
-            clear_inject_container();
+            console.log("disco")
+            document.getElementById(current + "_container").classList.add("passive");
+            current = "disco";
+            document.getElementById("disco_container").classList.remove("passive");
             break;
 
         case "contact":
-            clear_inject_container();
+            console.log("contact")
+            document.getElementById(current + "_container").classList.add("passive");
+            current = "contact";
+            document.getElementById("contact_container").classList.remove("passive");
             break;
 
         case "about":
-            clear_inject_container();
+            console.log("about")
+            document.getElementById(current + "_container").classList.add("passive");
+            current = "about";
+            document.getElementById("about_container").classList.remove("passive");
             break;
     }
 }
