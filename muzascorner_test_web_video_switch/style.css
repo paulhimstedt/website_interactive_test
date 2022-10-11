@@ -20,6 +20,24 @@
                 margin-top: 90px;
             }
             
+            #contact_container {}
+            
+            #contact_button {}
+            
+            #menu {
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            #contact_container .card-body,
+            #about_container .card-body {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
             #hero_disco {
                 display: block;
                 margin-top: 50px;
@@ -159,5 +177,61 @@
                     -ms-flex: 100%;
                     flex: 100%;
                     max-width: 100%;
+                }
+            }
+            /* Fade in Bottom */
+            
+            .fadeInBottom {
+                -webkit-animation: fadeInBottom 3.5s both;
+                /* Safari 4+ */
+                -moz-animation: fadeInBottom 3.5s both;
+                /* Fx 5+ */
+                -o-animation: fadeInBottom 3.5s both;
+                /* Opera 12+ */
+                animation: fadeInBottom 3.5s both;
+                /* IE 10+, Fx 29+ */
+            }
+            
+            @-webkit-keyframes fadeInBottom {
+                0% {
+                    opacity: 0;
+                    -webkit-transform: translateY(50px);
+                }
+                100% {
+                    opacity: 1;
+                    -webkit-transform: translateY(0);
+                }
+            }
+            
+            @-moz-keyframes fadeInBottom {
+                0% {
+                    opacity: 0;
+                    -moz-transform: translateY(50px);
+                }
+                100% {
+                    opacity: 1;
+                    -moz-transform: translateY(0);
+                }
+            }
+            
+            @-o-keyframes fadeInBottom {
+                0% {
+                    opacity: 0;
+                    -o-transform: translateY(50px);
+                }
+                100% {
+                    opacity: 1;
+                    -o-transform: translateY(0);
+                }
+            }
+            
+            @keyframes fadeInBottom {
+                0% {
+                    opacity: 0;
+                    transform: translateY(50px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
                 }
             }

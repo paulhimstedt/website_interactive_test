@@ -1,5 +1,22 @@
 var current = "home";
 
+var fadeIndicator = 0
+const sections = document.querySelectorAll("section")
+const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {;
+        console.log(entries)
+        if (entry.isIntersecting) {
+            entry.target.classList.add("fadeInBottom");
+
+        }
+    });
+});
+
+console.log(sections)
+sections.forEach(section => {
+    observer2.observe(section);
+});
+
 function return_content(mode) {
 
     switch (mode) {
