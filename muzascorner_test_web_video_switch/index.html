@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <script defer src="content_manager.js"></script>
 </head>
 
@@ -64,17 +64,17 @@
         </div>
     </div>
     <!--HERE COMES THE EXCHANGABLE PART OF THE WEBSITE-->
-    <div class="btn-group" id="page_navigation">
-        <button class="btn">«</button>
+    <div class="btn-group" id="page_navigation" style="z-index: 555;">
+        <button id="bot_nav_left" class="btn">«</button>
         <button id="bottom_pagination_text" class="btn">HOME</button>
-        <button class="btn">»</button>
+        <button id="bot_nav_right" class="btn">»</button>
     </div>
 
     <section class="passive" id="home_container">
 
         <div class="hero min-h-screen" id="hero_disco">
             <div style="max-width:100%" class="hero-content w-full text-center flex-col lg:flex-row">
-                <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                <div class="card card-compact w-96 bg-base-100 shadow-xl ">
                     <figure><img src="src/images/origami_small.PNG" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">NEW EP DRAUSSEN!</h2>
@@ -91,8 +91,9 @@
     <section class="passive" id="disco_container">
 
         <div class="hero min-h-screen" id="hero_disco">
-            <div style="margin-right: 0px;max-width:100%" class="hero-content  w-full text-center flex-col lg:flex-row">
-                <h1 style="color: white;" class="text-5xl font-bold">DISCOGRAFIE</h1>
+            <div class="hero-content  w-full text-center flex-col lg:flex-row">
+                <h1 style="color: white;" class="text-5xl font-bold">DISCO</br>GRAFIE</h1>
+                <img style="max-width: 60px ;" src="src/start_scrolling.gif" alt="">
                 <div class="h-96 carousel carousel-vertical rounded-box">
 
                     <div class="carousel-item h-full">
@@ -161,6 +162,8 @@
                     </div>
 
                 </div>
+
+
                 <!--
             </div><progress style="transform: rotate(90deg); " class="progress " value="76 " max="100 "></progress>
 -->

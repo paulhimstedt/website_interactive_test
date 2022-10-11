@@ -6,9 +6,16 @@ var contact_button = document.getElementById("contact_button");
 var disco_button = document.getElementById("disco_button");
 var about_button = document.getElementById("about_button");
 var vid_conatiner = document.getElementById("vid-container");
+
 var active_scene = "home";
 var path = window.location.pathname;
 var page = path.split("/").pop();
+
+var nav_left = document.getElementById("bot_nav_left");
+var nav_right = document.getElementById("bot_nav_right");
+
+nav_left.addEventListener("click", bot_nav_left);
+nav_right.addEventListener("click", bot_nav_right)
 
 
 pagename = page.split(".")[0]
@@ -18,6 +25,42 @@ console.log(pagename);
 
 
 //console.log(active_scene)
+function bot_nav_left() {
+    console.log("left", active_scene)
+    switch (active_scene) {
+        case "home":
+            disco_button_set_background();
+            break;
+        case "disco":
+            about_buttonn_set_background();
+            break;
+        case "about":
+            contact_buttonn_set_background();
+            break;
+        case "contact":
+            home_button_set_background();
+            break;
+    }
+
+}
+
+function bot_nav_right() {
+    console.log("right", active_scene)
+    switch (active_scene) {
+        case "home":
+            contact_buttonn_set_background();
+            break;
+        case "contact":
+            about_buttonn_set_background();
+            break;
+        case "about":
+            disco_button_set_background();
+            break;
+        case "disco":
+            home_button_set_background();
+            break;
+    }
+}
 
 function home_button_set_background() {
     transition(active_scene, "home");
@@ -143,6 +186,9 @@ function transition(current_scene, target_scene) {
 
 
     }
+
+
+
     const container = document.getElementById('vid-container');
 
     video.addEventListener('ended', function() {
