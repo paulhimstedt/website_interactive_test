@@ -43,6 +43,10 @@
                 margin-top: 50px;
             }
             
+            #disco_scrollable {
+                cursor: grabbing;
+            }
+            
             #topnav_container {}
             
             #darkmode_bg {
