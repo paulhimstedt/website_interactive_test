@@ -63,31 +63,40 @@ function bot_nav_right() {
 }
 
 function home_button_set_background() {
-    transition(active_scene, "home");
-    active_scene = "home";
-    return_content("home");
-
-    // sql.a.return
+    if (active_scene != "home") {
+        transition(active_scene, "home");
+        active_scene = "home";
+        return_content("home");
+    }
 }
 
 function contact_buttonn_set_background() {
-    transition(active_scene, "contact");
-    active_scene = "contact";
-    return_content("contact");
+    if (active_scene != "contact") {
+        transition(active_scene, "contact");
+        active_scene = "contact";
+        return_content("contact");
+    }
+
 
 }
 
 function disco_button_set_background() {
-    transition(active_scene, "disco");
-    active_scene = "disco";
-    return_content("disco");
+    if (active_scene != "disco") {
+        transition(active_scene, "disco");
+        active_scene = "disco";
+        return_content("disco");
+    }
+
 
 }
 
 function about_buttonn_set_background() {
-    transition(active_scene, "about");
-    active_scene = "about";
-    return_content("about");
+    if (active_scene != "contact") {
+        transition(active_scene, "about");
+        active_scene = "about";
+        return_content("about");
+
+    }
 
 
 }
