@@ -19,47 +19,21 @@
 </head>
 
 <body onload="setupVideo()">
-
-    <!--
-    <div id="darkmode_bg">
-    </div>
-    -->
-
     <div class="hero">
         <div class="hero-overlay bg-opacity-100"></div id="topnav_container">
         <div class="text-center text-neutral-content">
             <div class="max-w-md">
                 <div id="vid-container">
-                    <video autoplay muted id="myVideo" style="
-                    background-size: cover;
-                    background-position: center;
-                    object-position: center;
-                    position: absolute;
-                    object-fit: cover;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    margin: 0%;
-                    height: 100%;
-                    z-index: -442;
-                    ">
+                    <video autoplay muted id="myVideo">
                         <source src="src/transitions/intro.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
                 <button id="btn_home" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" onclick="home_button_set_background()" id="home_button"> home </button>
                 <button id="btn_contact" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" onclick="contact_buttonn_set_background()" id="contact_button"> contact </button>
-
                 <button id="btn_disco" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" onclick="disco_button_set_background()" id="disco_button"> discografie </button>
-
                 <button id="btn_about" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" onclick="about_buttonn_set_background()" id="about_button"> about </button>
                 <h1 style="font-size:xx-large;" id="header_text" class="mb-5 text-5xl font-bold">MUZASCORNER</h1>
-                <!--
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" class="btn btn-primary">SLIDE IN</button>
-                -->
-
-
             </div>
         </div>
     </div>
@@ -89,11 +63,10 @@
     <div id="main_content">
 
         <section class="" id="home_container">
-
             <div class="hero" style="margin-top: 50px;">
                 <div style="max-width:100%" class="hero-content text-center flex-col lg:flex-row">
                     <div class=" carousel carousel-vertical rounded-box" id="disco_scrollable">
-                        <div class="card card-compact bg-base-100 shadow-xl ">
+                        <div class="card card-compact card-compact bg-base-100 shadow-xl ">
                             <figure><img style="max-width:80%" src="src/images/andale.PNG" alt="Shoes" /></figure>
                             <div class="card-body">
                                 <h2 class="card-title">¡Ándale!</h2>
@@ -109,17 +82,13 @@
         </section>
 
         <section class="passive" id="disco_container">
-
             <div class="" id="hero_disco">
                 <div style="margin-right: 0px;max-width:100%" class="hero-content  w-full text-center flex-col lg:flex-row">
-
                     <h2 style="color: white;" class="text-5xl font-bold">DISCO</br>GRAFIE</h2>
                     <img style="max-width: 50px ;" src="src/start_scrolling.gif" alt="">
-
                     <div class="h-96 carousel carousel-vertical rounded-box" id="disco_scrollable">
-
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/origami-freestyle">
                                     <figure><img src="src/disc-covers/origami_freestyle.jpg" /></figure>
                                 </a>
@@ -129,7 +98,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/blubberwasser">
                                     <figure><img src="src/disc-covers/blubberwasser.jpg" /></figure>
                                 </a>
@@ -139,7 +108,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/beyond-the-snow">
                                     <figure><img src="src/disc-covers/beyond_the_snow.jpg" /></figure>
                                 </a>
@@ -149,7 +118,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/elephants">
                                     <figure><img src="src/disc-covers/elephants.jpg" /></figure>
                                 </a>
@@ -159,7 +128,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/flicky">
                                     <figure><img src="src/disc-covers/flicky.jpg" /></figure>
                                 </a>
@@ -169,7 +138,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/all-you-can-eat">
                                     <figure><img src="src/disc-covers/all_you_can_eat.jpg" /></figure>
                                 </a>
@@ -179,7 +148,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/who">
                                     <figure><img src="src/disc-covers/who.jpg" /></figure>
                                 </a>
@@ -189,7 +158,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/cornerstore">
                                     <figure><img src="src/disc-covers/Cornerstore.jpg" /></figure>
                                 </a>
@@ -199,7 +168,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/12345">
                                     <figure><img src="src/disc-covers/12345.jpg" /></figure>
                                 </a>
@@ -209,7 +178,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/faded-paint">
                                     <figure><img src="src/disc-covers/faded_paint.jpg" /></figure>
                                 </a>
@@ -219,7 +188,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/go-off">
                                     <figure><img src="src/disc-covers/go_off.jpg" /></figure>
                                 </a>
@@ -229,7 +198,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/origami-freestyle">
                                     <figure><img src="src/disc-covers/going_global.jpg" /></figure>
                                 </a>
@@ -239,7 +208,7 @@
                             </div>
                         </div>
                         <div class="carousel-item h-full">
-                            <div class="card bg-base-200 shadow-xl">
+                            <div class="card card-compact bg-base-200 shadow-xl">
                                 <a target=“_blank” href="https://songwhip.com/muzascorner/origami-freestyle">
                                     <figure><img src="src/disc-covers/contrasts.jpg" /></figure>
                                 </a>
@@ -250,22 +219,11 @@
                         </div>
 
                     </div>
-
-
-                    <!--
-            </div><progress style="transform: rotate(90deg); " class="progress " value="76 " max="100 "></progress>
--->
                 </div>
-
             </div>
-
-
         </section>
 
         <section class="passive" id="contact_container">
-
-
-
             <div class="card">
                 <div class="card-body" style=" margin-top: 170px;">
                     <h2 class="text-5xl font-bold " style="color: white;">Get </br> in</br> Touch!</h2>
@@ -280,27 +238,13 @@
         </section>
 
         <section class="passive" id="about_container">
-
             <div class="card">
-
                 <div class="card-body text-center" style="width:auto; background-color: rgba(255, 255, 255, 0); border-radius: 25px; ">
-
-                    <!--
-                    <div style="height: 200px;" class="avatar">
-                        <div class=" mask mask-squircle">
-                            <img src="src/images/Profile-img.PNG" display: flow-root; shape-outside: circle(); clip-path: circle(); float: left; " />
-
-                    </div>
--->
                     <h2 class="text-5xl font-bold " style="color: rgb(184, 134, 11); font-weight: 900; ">Das bin ich.</h2>
                     <p style="max-width: 1000px; margin-top: 10px; color: aliceblue; ">Young independent rap artistural & musical diversity, leading to a GLOBdependent rap artistural & musical diversity, leading to a GLOBAL pdependent rap artistural & musical diversity, leading to a GLOBAL pdependent rap artistural &
                         musical diversity, leading to a GLOBAL pAL product & appealing to a GLOBAL audience. Going Global mark my words.</p>
                 </div>
-
             </div>
-
-
-
         </section>
     </div>
 </body>

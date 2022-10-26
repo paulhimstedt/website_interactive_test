@@ -2,14 +2,9 @@ body {
     overflow: hidden;
 }
 
-.hero_content_visible_icon {}
-
-.hero_content_invisible_icon {
-    display: none;
-}
-
-#home_container {
-    padding: 5% 0;
+#myVideo {
+    height: 100%;
+    width: 100%;
 }
 
 #contact_container,
@@ -32,10 +27,6 @@ body {
     justify-content: center;
 }
 
-#contact_button {}
-
-#main_content {}
-
 .vert_center {
     display: flex;
     align-items: center;
@@ -55,8 +46,6 @@ body {
     margin-right: auto;
 }
 
-#hero_disco {}
-
 #disco_scrollable {
     cursor: grabbing;
 }
@@ -65,8 +54,6 @@ body {
     max-height: 300px;
     width: auto;
 }
-
-#topnav_container {}
 
 #darkmode_bg {
     position: absolute;
@@ -122,26 +109,7 @@ video {
     right: 0;
 }
 
-#inject_container {}
-
 #home_content_container {
-    /*
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    z-index: 3;
-    margin: auto;
-    */
     margin: auto;
     width: 32%;
 }
@@ -206,6 +174,12 @@ body {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
+    }
+}
+
+@media screen and (max-height: 745px) {
+    #disco_container .card {
+        height: 75%;
     }
 }
 

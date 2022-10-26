@@ -1,19 +1,13 @@
-//var sql = require("./content_manager");
-
-//sql.a();
 var home_button = document.getElementById("home_button");
 var contact_button = document.getElementById("contact_button");
 var disco_button = document.getElementById("disco_button");
 var about_button = document.getElementById("about_button");
 var vid_conatiner = document.getElementById("vid-container");
-
 var active_scene = "home";
 var path = window.location.pathname;
 var page = path.split("/").pop();
-
 var nav_left = document.getElementById("bot_nav_left");
 var nav_right = document.getElementById("bot_nav_right");
-
 var main_content = document.getElementById("main_content")
 var show_icon = document.getElementById("hero_content_invisible_icon");
 var hide_icon = document.getElementById("hero_content_visible_icon");
@@ -21,30 +15,20 @@ var hide_icon = document.getElementById("hero_content_visible_icon");
 nav_left.addEventListener("click", bot_nav_left);
 nav_right.addEventListener("click", bot_nav_right)
 
-
 pagename = page.split(".")[0]
-console.log(path)
-console.log(page)
-console.log(pagename);
 
 function hide_hero_content() {
-    console.log("hide_hero_content")
     show_icon.classList.remove("passive");
     hide_icon.classList.add("passive");
-
     main_content.classList.add("passive");
 }
 
 function show_hero_content() {
-
     show_icon.classList.add("passive");
     hide_icon.classList.remove("passive");
     main_content.classList.remove("passive");
-    console.log("show_hero_content")
 }
 
-
-//console.log(active_scene)
 function bot_nav_left() {
     console.log("left", active_scene)
     switch (active_scene) {
@@ -61,7 +45,6 @@ function bot_nav_left() {
             home_button_set_background();
             break;
     }
-
 }
 
 function bot_nav_right() {
@@ -96,8 +79,6 @@ function contact_buttonn_set_background() {
         active_scene = "contact";
         return_content("contact");
     }
-
-
 }
 
 function disco_button_set_background() {
@@ -106,8 +87,6 @@ function disco_button_set_background() {
         active_scene = "disco";
         return_content("disco");
     }
-
-
 }
 
 function about_buttonn_set_background() {
@@ -115,10 +94,7 @@ function about_buttonn_set_background() {
         transition(active_scene, "about");
         active_scene = "about";
         return_content("about");
-
     }
-
-
 }
 
 function setupVideo() {
@@ -135,13 +111,11 @@ function updateBackground(newBG) {
 }
 
 function transition(current_scene, target_scene) {
-    console.log(current_scene, " & ", target_scene)
+    //console.log(current_scene, " & ", target_scene)
     setupVideo()
     var video = document.createElement('video');
-
     var bottom_pagination_content = document.getElementById("bottom_pagination_text");
     bottom_pagination_content.innerHTML = "home"
-    console.log(bottom_pagination_content);
     bottom_pagination_content.innerHTML = target_scene;
 
     switch (current_scene) {
@@ -160,7 +134,6 @@ function transition(current_scene, target_scene) {
                     video.src = 'src/transitions/home_disco.mp4';
                     break;
             }
-
             break;
         case "contact":
             switch (target_scene) {
@@ -212,36 +185,19 @@ function transition(current_scene, target_scene) {
                     break;
             }
             break;
-
-
     }
-
-
-
     const container = document.getElementById('vid-container');
-
     video.addEventListener('ended', function() {
         container.removeChild(video);
-        console.log("removed image ");
     })
-
-    /*sniff for existing vids*/
-    let numb = document.getElementById("vid-container").childElementCount;
-    let childs = document.getElementById("vid-container").childNodes
-    console.log(numb)
-
     video.autoplay = true;
     video.controls = false;
     video.muted = true;
     video.style.height = "100%";
     video.style.width = "100%";
-    //video.style.objectPosition = "center center";
     video.style.top = "0";
     video.style.left = "0";
     video.style.bottom = "0";
     video.style.right = "0";
-
-
-
     container.appendChild(video);
 }
