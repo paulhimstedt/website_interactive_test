@@ -2,6 +2,17 @@
                 overflow: hidden;
             }
             
+            #home_container {
+                padding: 5% 0;
+            }
+            
+            #contact_container,
+            #about_container,
+            #disco_container,
+            #home_container {
+                padding: 8% 0;
+            }
+            
             .passive {
                 display: none;
             }
@@ -15,20 +26,13 @@
                 justify-content: center;
             }
             
-            #home_container {
-                /*
-                padding: 10px;
-                margin-top: 90px;*/
-            }
-            
-            #contact_container {}
-            
             #contact_button {}
+            
+            #main_content {}
             
             .vert_center {
                 display: flex;
                 align-items: center;
-                justify-content: center;
             }
             
             #menu {
@@ -45,10 +49,7 @@
                 margin-right: auto;
             }
             
-            #hero_disco {
-                display: block;
-                margin-top: 50px;
-            }
+            #hero_disco {}
             
             #disco_scrollable {
                 cursor: grabbing;
