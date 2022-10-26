@@ -14,6 +14,10 @@ var page = path.split("/").pop();
 var nav_left = document.getElementById("bot_nav_left");
 var nav_right = document.getElementById("bot_nav_right");
 
+var main_content = document.getElementById("main_content")
+var show_icon = document.getElementById("hero_content_invisible_icon");
+var hide_icon = document.getElementById("hero_content_visible_icon");
+
 nav_left.addEventListener("click", bot_nav_left);
 nav_right.addEventListener("click", bot_nav_right)
 
@@ -22,6 +26,22 @@ pagename = page.split(".")[0]
 console.log(path)
 console.log(page)
 console.log(pagename);
+
+function hide_hero_content() {
+    console.log("hide_hero_content")
+    show_icon.classList.remove("passive");
+    hide_icon.classList.add("passive");
+
+    main_content.classList.add("passive");
+}
+
+function show_hero_content() {
+
+    show_icon.classList.add("passive");
+    hide_icon.classList.remove("passive");
+    main_content.classList.remove("passive");
+    console.log("show_hero_content")
+}
 
 
 //console.log(active_scene)
@@ -91,7 +111,7 @@ function disco_button_set_background() {
 }
 
 function about_buttonn_set_background() {
-    if (active_scene != "contact") {
+    if (active_scene != "about") {
         transition(active_scene, "about");
         active_scene = "about";
         return_content("about");
